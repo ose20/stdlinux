@@ -26,8 +26,12 @@ static void do_ls(char *path) {
   }
 
   struct dirent *ent;
+  struct dirent *firstent;
+  int cnt = 0;
   while ((ent = readdir(d)) != NULL) {
+    if(cnt++ == 0) {firstent = ent;}
     printf("%s\n", ent->d_name);
   }
+  printf("first entry name is %s\n", firstent->d_name);
   closedir(d);
 }

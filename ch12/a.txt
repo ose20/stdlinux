@@ -1,0 +1,10 @@
+total 80
+-rw-r--r-- 1 vagrant vagrant     0  7月 18  2021 a.txt
+-rwxr-xr-x 1 vagrant vagrant 13328  7月 12 23:33 sh1
+-rw-r--r-- 1 vagrant vagrant  2662  7月 13 00:40 sh1.c
+-rwxr-xr-x 1 vagrant vagrant 18288  7月 18 21:04 sh2
+-rw-r--r-- 1 vagrant vagrant  6791  7月 18 21:50 sh2.c
+-rwxr-xr-x 1 vagrant vagrant 11584  7月 11 23:06 spawn
+-rw-r--r-- 1 vagrant vagrant   900  7月 11 23:05 spawn.c
+-rwxr-xr-x 1 vagrant vagrant  8400  7月 18 16:13 toy
+-rw-r--r-- 1 vagrant vagrant   307  7月 18 16:13 toy.c

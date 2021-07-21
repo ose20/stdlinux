@@ -2,12 +2,26 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(void) {
-  char *p;
-  int a = 5;
-  int *q =  &a;
+struct toy {
+  int (*f)(int);
+};
 
-  printf("%c\n", *p);
-  printf("%p\n", q);
+static int succ(int x) {
+  return x + 1;
+}
+
+static int decr(int x) {
+  return x - 1;
+}
+
+int main(void) {
+
+  struct toy toy_lst[] = {
+    {succ},
+    {decr}
+  };
+
+  printf("%d\n", toy_lst[0].f(100));
+  exit(0);
 }
 
